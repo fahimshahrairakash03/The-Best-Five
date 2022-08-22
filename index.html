@@ -22,20 +22,109 @@
     <!-- main section -->
     <main class="container-fluid p-5">
       <section class="container">
-        <div class="row">
-          <div class="col-4">
+        <div class="row g-4">
+          <div class="col-3">
             <div class="card" style="width: 18rem">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <img src="./image/messi.jpg" class="card-img-top" alt="..." />
+              <div
+                class="card-body bg-dark d-flex flex-column justify-content-center align-items-center"
+              >
+                <h5 class="card-title text-white mb-4">Lionel Messi</h5>
+                <button type="button" class="btn btn-primary">Select</button>
               </div>
             </div>
           </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <img src="./image/mbappe.jpg" class="card-img-top" alt="..." />
+              <div
+                class="card-body bg-dark d-flex flex-column justify-content-center align-items-center"
+              >
+                <h5 class="card-title text-white mb-4">Kylian Mbappé</h5>
+                <button type="button" class="btn btn-primary">Select</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <img src="./image/di maria.jpg" class="card-img-top" alt="..." />
+              <div
+                class="card-body bg-dark d-flex flex-column justify-content-center align-items-center"
+              >
+                <h5 class="card-title text-white mb-4">Ángel Di María</h5>
+                <button type="button" class="btn btn-primary">Select</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- best Five player list -->
+
+          <div class="col-3">
+            <div class="card bg-dark player-list" style="width: 18rem">
+              <div class="card-header text-white text-center">
+                <h4>Selected player V</h4>
+              </div>
+              <ol class="text-white">
+                <li>asdasd</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- best Five player list -->
+
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <img src="./image/Neymar.jpg" class="card-img-top" alt="..." />
+              <div
+                class="card-body bg-dark d-flex flex-column justify-content-center align-items-center"
+              >
+                <h5 class="card-title text-white mb-4">Neymar Jr</h5>
+                <button type="button" class="btn btn-primary">Select</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <img src="./image/Ramos.jpg" class="card-img-top" alt="..." />
+              <div
+                class="card-body bg-dark d-flex flex-column justify-content-center align-items-center"
+              >
+                <h5 class="card-title text-white mb-4">Sergio Ramos</h5>
+                <button type="button" class="btn btn-primary">Select</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <img src="./image/ronaldo.jpg" class="card-img-top" alt="..." />
+              <div
+                class="card-body bg-dark d-flex flex-column justify-content-center align-items-center"
+              >
+                <h5 class="card-title text-white mb-4">Cristiano Ronaldo</h5>
+                <button type="button" class="btn btn-primary">Select</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Cost Calculation -->
+
+          <div class="col-3">
+            <div class="card bg-dark" style="width: 18rem">
+              <h4 class="text-white text-center mb-3">Budget</h4>
+              <div
+                class="d-flex justify-content-between align-items-center p-4"
+              >
+                <h6 class="text-white">per player:</h6>
+                <input class="w-50" type="text" />
+              </div>
+              <button type="button" class="btn btn-primary w-50 mx-auto mb-4">
+                Calculate
+              </button>
+              <h5 class="text-white text-center">Player Expense: $1000</h5>
+            </div>
+          </div>
+
+          <!-- Team Cost Calculation -->
         </div>
       </section>
     </main>

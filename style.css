@@ -9,3 +9,10 @@ header h1 {
 main {
   background-color: #434343;
 }
+img {
+  height: 250px;
+  width: 130px;
+}
+.player-list {
+  height: 370px;
+}
