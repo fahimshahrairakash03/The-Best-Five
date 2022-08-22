@@ -24,9 +24,7 @@ document.getElementById("btn-ronaldo").addEventListener("click", function () {
 });
 
 document.getElementById("calculate").addEventListener("click", function () {
-  const playerCostField = document.getElementById("per-player-cost");
-  const perPlayerCost = parseFloat(playerCostField.value);
-  playerCostField.value = "";
+  const perPlayerCost = costing("per-player-cost");
   const playerExpenseField = document.getElementById("total-player-expense");
   const playerList = document.querySelectorAll("li");
   const totalPlayer = playerList.length;
@@ -38,3 +36,15 @@ document.getElementById("calculate").addEventListener("click", function () {
     return;
   }
 });
+
+document
+  .getElementById("total-calculate")
+  .addEventListener("click", function () {
+    const managerCost = costing("manager-cost");
+    const coachCost = costing("coach-cost");
+    const playerExpenseField = document.getElementById("total-player-expense");
+    const totalPlayerExpense = parseFloat(playerExpenseField.innerText);
+    const totalCost = managerCost + coachCost + totalPlayerExpense;
+    const totalCostField = document.getElementById("total-cost");
+    totalCostField.innerText = totalCost;
+  });
