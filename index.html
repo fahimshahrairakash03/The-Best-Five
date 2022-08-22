@@ -137,12 +137,18 @@
                 class="d-flex justify-content-between align-items-center p-4"
               >
                 <h6 class="text-white">per player:</h6>
-                <input class="w-50" type="text" />
+                <input id="per-player-cost" class="w-50" type="text" />
               </div>
-              <button type="button" class="btn btn-primary w-50 mx-auto mb-4">
+              <button
+                id="calculate"
+                type="button"
+                class="btn btn-primary w-50 mx-auto mb-4"
+              >
                 Calculate
               </button>
-              <h5 class="text-white text-center">Player Expense: $1000</h5>
+              <h5 class="text-white text-center">
+                Player Expense: $<span id="total-player-expense">1000</span>
+              </h5>
 
               <div
                 class="d-flex justify-content-between align-items-center p-4"
@@ -156,6 +162,13 @@
                 <h6 class="text-white">Coach:</h6>
                 <input class="w-50" type="text" />
               </div>
+              <button
+                id="total-calculate"
+                type="button"
+                class="btn btn-primary w-50 mx-auto mb-4"
+              >
+                Total Calculate
+              </button>
               <h5 class="text-white text-center">Total: $1000</h5>
             </div>
           </div>
