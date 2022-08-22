@@ -2,12 +2,17 @@ function getName(id) {
   const nameField = document.getElementById(id);
   const name = nameField.innerText;
   const selectedPlayerList = document.getElementById("player-list");
-  const palyers = selectedPlayerList.innerText;
+  const playerList = selectedPlayerList.childNodes.length;
   const newField = document.createElement("li");
   newField.innerText = name;
-
-  selectedPlayerList.appendChild(newField);
+  if (playerList < 5) {
+    selectedPlayerList.appendChild(newField);
+  } else {
+    alert("list filled up");
+    return;
+  }
 }
+
 function btnDisable(id) {
   const btn = document.getElementById(id);
   btn.disabled = true;
