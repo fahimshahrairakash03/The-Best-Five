@@ -29,8 +29,12 @@
               <div
                 class="card-body bg-dark d-flex flex-column justify-content-center align-items-center"
               >
-                <h5 class="card-title text-white mb-4">Lionel Messi</h5>
-                <button type="button" class="btn btn-primary">Select</button>
+                <h5 id="messi" class="card-title text-white mb-4">
+                  Lionel Messi
+                </h5>
+                <button id="btn-messi" type="button" class="btn btn-primary">
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -40,8 +44,12 @@
               <div
                 class="card-body bg-dark d-flex flex-column justify-content-center align-items-center"
               >
-                <h5 class="card-title text-white mb-4">Kylian Mbappé</h5>
-                <button type="button" class="btn btn-primary">Select</button>
+                <h5 id="bappe" class="card-title text-white mb-4">
+                  Kylian Mbappé
+                </h5>
+                <button id="btn-bappe" type="button" class="btn btn-primary">
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -51,8 +59,12 @@
               <div
                 class="card-body bg-dark d-flex flex-column justify-content-center align-items-center"
               >
-                <h5 class="card-title text-white mb-4">Ángel Di María</h5>
-                <button type="button" class="btn btn-primary">Select</button>
+                <h5 id="maria" class="card-title text-white mb-4">
+                  Ángel Di María
+                </h5>
+                <button id="btn-maria" type="button" class="btn btn-primary">
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -64,9 +76,7 @@
               <div class="card-header text-white text-center">
                 <h4>Selected player V</h4>
               </div>
-              <ol class="text-white">
-                <li>asdasd</li>
-              </ol>
+              <ol id="player-list" class="text-white"></ol>
             </div>
           </div>
 
@@ -78,8 +88,12 @@
               <div
                 class="card-body bg-dark d-flex flex-column justify-content-center align-items-center"
               >
-                <h5 class="card-title text-white mb-4">Neymar Jr</h5>
-                <button type="button" class="btn btn-primary">Select</button>
+                <h5 id="neymar" class="card-title text-white mb-4">
+                  Neymar Jr
+                </h5>
+                <button id="btn-neymar" type="button" class="btn btn-primary">
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -89,8 +103,12 @@
               <div
                 class="card-body bg-dark d-flex flex-column justify-content-center align-items-center"
               >
-                <h5 class="card-title text-white mb-4">Sergio Ramos</h5>
-                <button type="button" class="btn btn-primary">Select</button>
+                <h5 id="ramos" class="card-title text-white mb-4">
+                  Sergio Ramos
+                </h5>
+                <button id="btn-ramos" type="button" class="btn btn-primary">
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -100,8 +118,12 @@
               <div
                 class="card-body bg-dark d-flex flex-column justify-content-center align-items-center"
               >
-                <h5 class="card-title text-white mb-4">Cristiano Ronaldo</h5>
-                <button type="button" class="btn btn-primary">Select</button>
+                <h5 id="ronaldo" class="card-title text-white mb-4">
+                  Cristiano Ronaldo
+                </h5>
+                <button id="btn-ronaldo" type="button" class="btn btn-primary">
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -121,6 +143,20 @@
                 Calculate
               </button>
               <h5 class="text-white text-center">Player Expense: $1000</h5>
+
+              <div
+                class="d-flex justify-content-between align-items-center p-4"
+              >
+                <h6 class="text-white">Manager:</h6>
+                <input class="w-50" type="text" />
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center p-4"
+              >
+                <h6 class="text-white">Coach:</h6>
+                <input class="w-50" type="text" />
+              </div>
+              <h5 class="text-white text-center">Total: $1000</h5>
             </div>
           </div>
 
@@ -135,5 +171,7 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="./utility.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
